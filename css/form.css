@@ -494,7 +494,6 @@ form button:hover{
     }
    .footer{
     gap: 0rem;
-
    }
      .footer-box h3{
     font-size: 15px;
@@ -504,5 +503,8 @@ form button:hover{
     }
     .btn{
     padding: 13px 2px;
+   }
+    form input {   
+    padding: 6px;    
    }
 }
