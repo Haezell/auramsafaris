@@ -507,4 +507,7 @@ form button:hover{
     form input {   
     padding: 6px;    
    }
+   .form-check-input{
+    width: 3%;
+   }
 }
