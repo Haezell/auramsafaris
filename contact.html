@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FAQ</title>
+
+        <!---custom css link-->
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+    
+        <!---boxicons link-->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet" />
+        <!---google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         
+         <!---header design-->
+         <header>
+            <a href="#" class="logo">AURAM<span>SAFARIS</span></a>
+
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Portfolio</a></li>                
+            </ul>
+
+            <div class="h-right">
+                <a href="#" class="link">Follow us</a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-pinterest-fill"></i></a>
+                <div class="box box-menu" id="menu-icon">
+                    <a href="#"><i class="ri-menu-line"></i></a>
+                </div>
+            </div>
+            </div>
+        </header>
+
+        <!--form desigin-->
+        <section class="contact">
+         <div class="contact-form">
+             <form onsubmit="sendEmail(); reset(); return false ">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email Id" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+                <button type="submit">Send</button>
+             </form>
+         </div>
+        </section>
+         <!-- Include the Email.js library -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+    // Initialize Email.js with your user ID
+    emailjs.init("jatDJaGBMNPrDX257");
+
+    function sendEmail() {
+        var templateParams = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            message: document.getElementById("message").value
+        };
+
+        // Send email using Email.js
+        emailjs.send("service_y1lw00g","template_f4pgv8r", templateParams)
+            .then(function(response) {
+                console.log("Email sent successfully:", response);
+                alert("Message Sent Successfully");
+            }, function(error) {
+                console.log("Email sending failed:", error);
+                alert("Failed to send message. Please try again later.");
+            });
+    }
+</script>
+
+      
+            
+        <!---custom js file link-->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

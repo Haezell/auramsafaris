@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Modal Form></title>
+
+        <!---custom css link-->
+        <link rel="stylesheet" type="text/css" href="css/form.css">
+
+        <!---boxicons link-->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet" />
+        <!---google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+                <!---header design-->
+            <header>
+              <a href="#" class="logo">AURAM<span>SAFARIS</span></a>
+
+              <ul class="navbar">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="FAQ.html">FAQ</a></li>
+                  <li><a href="about">About Us</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  
+              </ul>
+
+              <div class="h-right">
+                  <a href="#" class="link">Follow us</a>
+                  <a href="#"><i class="ri-instagram-fill"></i></a>
+                  <a href="#"><i class="ri-youtube-fill"></i></a>
+                  <a href="#"><i class="ri-facebook-fill"></i></a>
+                  <a href="#"><i class="ri-pinterest-fill"></i></a>
+                  <div class="box box-menu" id="menu-icon">
+                      <a href="#"><i class="ri-menu-line"></i></a>
+                  </div>
+              </div>
+
+              </div>
+          </header>
+
+          
+            <section class="home">  
+            <div class="container">                   
+                  <div class="card-body">
+                    <form method='post', action = "/details"  id="form-post">
+                      <div class="form-group">
+                        <label for="full_name"><h1>Name</h1></label>
+                        <input type="text" class="form-control" name='name' id="name" placeholder="Enter full name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email_address"><h1>Address</h1></label>
+                        <input type="email" class="form-control" id="email" name='email' placeholder="Enter email address">
+                      </div>
+                      <div class="form-group">
+                        <label for="phone_number"><h1>Number</h1></label>
+                        <input type="tel" class="form-control" id="phone_number" name='phone_number' placeholder="Enter phone number">
+                      </div>
+                      <div class="form-group">
+                        <label for="nationality"><h1>Nationality</h1></label>
+                        <input type="text" class="form-control" id="nationality" name='nationality' placeholder="Enter nationality">
+                      </div>
+                      <div class="form-group">
+                        <label for="time_to_travel"><h1>Your ideal time to travel?</h1></label>
+                        <input type="text" class="form-control" name='time_to_travel' id="time_to_travel" placeholder="Month/Year">
+                      </div>
+                        <div class="form-group">  
+                        <label for="time_to_travel"><h1>How much time to spend (in days)?</h1></label>
+                        <input type="number" class="form-control" name='time_to_travel' id="time_to_spend">
+                      </div>
+                      <div class="form-group">
+                        <h1>Interests</h1><br>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name = "interests"  value="Adventure" id="adventure">
+                          <label class="form-check-label" for="adventure">Adventure</label>
+          
+                          <input class="form-check-input" type="checkbox" name = "interests" value="wildelife" id="wildelife">
+                          <label class="form-check-label" for="wildelife">wildelife</label>
+          
+                          <input class="form-check-input" type="checkbox" name = "interests" value="Family Friendly" id="Family">
+                          <label class="form-check-label" for="Family ">Family Friendly</label>
+          
+                          <input class="form-check-input" type="checkbox" name = "interests" value="Romantic Gateway" id="romantic">
+                          <label class="form-check-label" for="romantic">Romantic Gateway</label>
+          
+                          <input class="form-check-input" type="checkbox" name = "interests" value="Photo Safari" id="Safari">
+                          <label class="form-check-label" for="Safari">Photo Safari</label>
+                          
+                          <input class="form-check-input" type="checkbox" name = "interests" value="Big 5 Safaries" id="Big">
+                          <label class="form-check-label" for="Big">Big 5 Safaries</label>
+          
+                          <input class="form-check-input" type="checkbox" name = "interests" value="Honeymoon" id="Honeymoon">
+                          <label class="form-check-label" for="Honeymoon">Honeymoon</label>
+                          
+                          <input class="form-check-input" type="checkbox" name = "interests" value="trekking" id="trekking">
+                          <label class="form-check-label" for="trekking">trekking</label>
+          
+                        </div>
+                        <!-- Add more checkboxes for other interests -->
+                      </div>
+                      <div class="form-group" >
+                        <label for="adults"><h1>How many people will be travelling? (Adults)</h1></label>
+                        <input type="number" class="form-control" name='adults' id="adults">
+                      </div>
+                        
+                      <div class="child">
+                        <div class="form-child">
+                        <label for="children"><h1>Number of Children Travelling?</h1></label>
+                        <input type="number" class="form-control" name='children' id="children">  
+                      </div>
+                      <div class="form-child1">
+                      <label for="children"><h1>Age of Children?</h1></label>
+                        <input type="text" class="form-control" name='children' id="childrens_age" placeholder="eg. 5,7...">
+                    </div>
+                  </div>
+                      <div class="form-group">
+                        <label for="accommodation"><h1>Accommodation</h1></label><br>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" name = "accommodation" value="Luxury" id="luxury">
+                          <label class="form-check-label" for="luxury">Luxury</label>
+                          <input class="form-check-input" type="checkbox" name = "accommodation" value="midrange" id="midrange">
+                          <label class="form-check-label" for="midrange">midrange</label>
+          
+                          <input class="form-check-input" type="checkbox" name = "accommodation" value="Budget/Camping" id="Camping">
+                          <label class="form-check-label" for="Camping">Budget/Camping</label>
+                        </div>
+                        <!-- Add more checkboxes for other accommodation options -->
+                      </div>
+                      <div class="form-group">
+                        <label for="tour_type"><h1>Type</h1></label><br>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="tour_type" id="private_tour" value="private tour">
+                          <label class="form-check-label" for="private_tour">Private Tour</label>
+                          <input class="form-check-input" type="radio" name="tour_type" id="family_tour" value="Family tour">
+                          <label class="form-check-label" for="family_tour">Family Tour</label>
+                          <input class="form-check-input" type="radio" name="tour_type" id="group_join" value="group join">
+                          <label class="form-check-label" for="group_join">Goup join</label>
+                        </div>
+                        <!-- Add more radio buttons for other tour types -->
+                      </div>
+                      <div class="form-group">
+                        <label for="message"><h1>Message</h1></label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn">Submit</button>
+                    </form>
+                  </div>         
+              </div>
+              </section>  
+      
+          
+                  <!---footer section design--> 
+                  <section class="footer">
+                    <div class="footer-box">
+                        <h3>GET TO KNOW US</h3>
+                        <a href="#">About Auram Safaris</a>
+                        <a href="#">Why Choose us?</a>
+                        <a href="#"> Kilimanjaro Packing List</a>
+                        <a href="#"> Kilimanjaro Travel Insurance</a>
+                        <a href="#">Best Time to Climb Mt.Kilimanjaro</a>
+                    </div>
+        
+                    <div class="footer-box">
+                        <h3>TANZANIA TOURS</h3>
+                        <a href="#">Photographic Safaris</a>
+                        <a href="#">Migration River Crossing</a>
+                        <a href="#">Family Safaris</a>
+                        <a href="#">Honeymoon</a>
+                        <a href="#">Walking Safaris</a>
+                    </div>
+                    <div class="footer-box">
+                        <h3>TREKKING SAFARIS</h3>
+                        <a href="#">Machame Route</a>
+                        <a href="#">Rongai Route</a>
+                        <a href="#">Lemosho Route</a>
+                        <a href="#">Marangu Route</a>
+                        <a href="#">Mountain Bike Adventure</a>
+                    </div>
+                    <div class="footer-box">
+                        <h3>TAILOR-MADE SAFARIS</h3>
+                        <a href="#">Cultural Tours</a>
+                        <a href="#">Zanzibar Beach Holiday</a>
+                        <a href="#">Biking Safaris</a>
+                        <a href="#">Camping Safaris</a>
+                        <a href="#">Create my Dream Safari!</a>
+                    </div>
+        
+                    <div class="footer-box">
+                        <h3>About</h3>
+                        <a href="#">Our story</a>
+                        <a href="#">Benefits</a>
+                        <a href="#">Team</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Careers</a>
+                    </div>
+        
+                    <div class="footer-box">
+                        <h3>Help</h3>
+                        <a href="FAQ.html">FAQs</a>
+                        <a href="contact.html">Contact us</a>
+                    </div>      
+                  </section>
+                  
+                  <!---social-->
+                  <section class="box">
+                  <div class="social-box">
+                    <div class="social">
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                        <a href="#"><i class="ri-youtube-fill"></i></a>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-pinterest-fill"></i></a>
+                    </div>
+                </div> 
+            </section>
+        
+                  <!---copyright--> 
+                  <div class="copyright">
+                    <p>AURAM SAFARIS ©2024-All rights reserved | By Haezel | Leviton</p>       
+                  </div>
+        
+            <!---custom js file link-->
+            <script src="js/script.js"></script>
+              <!-- Bootstrap JS (Optional) - Required if you want to use the modal functionality -->
+            <script type="module" src="./fetchApi/app.js"></script>
+        
+</body>
+
+</html>
